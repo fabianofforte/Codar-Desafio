@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --red: #d6000d;
+  --gray: #dcdcdc;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+/* NAVBAR SECTION */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1% 3%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.title,
+.dot {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.title {
+  color: var(--red);
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  font-size: large;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item {
+  color: black;
+  padding: 8px 20px;
+}
+
+.item:hover {
+  background-color: var(--gray);
+  border-radius: 10px;
+}
+
+.login {
+  background-color: var(--red);
+  color: white;
+  padding: 8px 40px;
+  margin: 0 15px;
+  border-radius: 10px;
+}
+
+.login:hover {
+  box-shadow: 0px 0px 30px -10px var(--red);
+  -webkit-box-shadow: 0px 0px 30px -10px var(--red);
+  -moz-box-shadow: 0px 0px 30px -10px var(--red);
+}
+
+/* SECTION ONE - HEADER */
+.section-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  padding: 3% 0;
+}
+
+.video-call {
+  width: 28%;
+}
+
+.cta {
+  padding: 50px 0;
+}
+
+.slogan1 {
+  font-weight: bold;
+}
+
+.slogan2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--red);
+
+  margin-bottom: 50px;
+}
+
+.cta-button {
+  background-color: var(--red);
+  color: white;
+  border-radius: 10px;
+  font-weight: 500;
+
+  padding: 10px 45px;
+}
+
+.cta-button:hover {
+  box-shadow: 0px 0px 30px -10px var(--red);
+  -webkit-box-shadow: 0px 0px 30px -10px var(--red);
+  -moz-box-shadow: 0px 0px 30px -10px var(--red);
+}
+
+/* SECTION TWO - BODY */
+.section-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 3% 0;
+  padding-bottom: 0;
+}
+
+.desc-group {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.desc-topic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.fa {
+  font-size: 24px;
+  color: var(--red);
+  padding-right: 20px;
+}
+
+.coding {
+  width: 28%;
+}
+
+/* FORM */
+.form-box {
+  padding: 0 20%;
+  padding-bottom: 10%;
+}
+
+.label {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-input {
+  background-color: var(--gray);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 25%;
+  padding: 10px 0;
+  padding-left: 15px;
+  margin-right: 20px;
+}
+
+.form-button {
+  background-color: var(--red);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  width: 25%;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  box-shadow: 0px 0px 30px -10px var(--red);
+  -webkit-box-shadow: 0px 0px 30px -10px var(--red);
+  -moz-box-shadow: 0px 0px 30px -10px var(--red);
+}
+
+/* SECTION THREE - COMENTS */
+.section-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 6% 0;
+}
+
+.box-content {
+  background-color: var(--gray);
+  width: 30%;
+  border-radius: 15px;
+  margin: 0 20px;
+}
+
+.box-content:hover {
+  background-color: var(--red);
+  color: white;
+}
+
+.box-content:hover .avatar {
+  background-color: var(--gray);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  margin: 20px;
+}
+
+.avatar {
+  padding: 30px;
+  background-color: var(--red);
+  border-radius: 50%;
+}
+
+.coment {
+  padding: 0 20px;
+}
+
+.text {
+  font-size: small;
+  padding-bottom: 10px;
+}
+
+.author {
+  font-size: large;
+}
+
+.employment {
+  font-size: small;
+  font-weight: 900;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  background-color: black;
+  color: white !important;
+
+  padding: 50px 0;
+  margin: 0;
+}
+
+.description,
+.addr,
+.email,
+.phone,
+.socials-icons {
+  padding-top: 10px;
+}
+
+.about,
+.contact,
+.socials {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.email {
+  text-decoration: underline;
+}
+
+.socials-icons .fa {
+  font-size: 30px;
+}
+
+.fa-facebook-square:hover,
+.fa-instagram:hover,
+.fa-twitter-square:hover {
+  color: white;
+}
+
+@media screen and (max-device-width: 420px) {
+  /* NAVBAR SECTION */
+  nav {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .nav-items {
+    padding: 0;
+  }
+
+  .login {
+    display: none;
+  }
+
+  /* SECTION ONE - HEADER */
+  .section-one {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-call {
+    width: 80%;
+  }
+
+  .cta {
+    text-align: center;
+  }
+
+  /* SECTION TWO - BODY */
+  .section-two {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .coding {
+    width: 80%;
+    padding-bottom: 8%;
+  }
+
+  /* FORM */
+  .form-box {
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-input {
+    width: 65%;
+    margin: 5px 0;
+  }
+
+  .form-button {
+    width: 70%;
+    padding: 10px 15px;
+    margin: 5px 0;
+  }
+
+  /* SECTION THREE - COMENTS */
+  .section-three {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .box-content {
+    margin: 20px 0;
+    width: 80%;
+  }
+
+  .avatar {
+    padding: 25px;
+  }
+
+  .coment {
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .text,
+  .employment {
+    font-size: 0.7rem;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 20px 0;
+  }
+
+  .collumn1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+  }
+
+  .collumn2,
+  .collumn3,
+  .collumn4 {
+    padding: 20px 40px;
+  }
+
+  .collumn2 .description,
+  .email,
+  .phone,
+  .addr {
+    font-size: small;
+  }
+}
